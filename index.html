@@ -1,27 +1,367 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Portfolio and blog website for Yuvraj Singh Chauhan">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio and blog website for Yuvraj Singh Chauhan"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--favicon-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--remix icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    />
 
     <!--css-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Yuvraj S. Chauhan - Resume Portfolio | Blogs</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <!--main-->
+    <main class="main">
+      <div class="main__content">
+        <!--profile-->
+        <section class="profile section">
+          <div class="profile__container container grid">
+            <div class="profile__image">
+              <img
+                src="assets/img/profile.png"
+                alt="An right profile image of Yuvraj"
+                class="profile__img"
+              />
+            </div>
+            <div class="profile__data">
+              <h3 class="profile__greeting">Hello I'm</h3>
+              <h1 class="profile__name">Yuvraj Chauhan</h1>
+
+              <div class="profile__buttons">
+                <button class="profile__button">Information</button>
+                <button class="profile__button">Projects</button>
+              </div>
+
+              <h2 class="section__title">Profile</h2>
+              <p class="profile__description">
+                I'm driven by a passion for building robust systems and
+                fostering technical excellence. I believe in writing code that
+                scales, mentoring others, and contributing meaningfully to the
+                communities I'm part of. My approach is grounded in learning
+                deeply, shipping thoughtfully, and always asking the hard
+                questions about architecture and performance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="main__area">
+          <div class="main__group main-active" data-content id="info">
+            <div class="main__left">
+              <!--skills-->
+              <section class="skills section">
+                <div class="skills__container container">
+                  <h2 class="section__title">Skills</h2>
+
+                  <ul class="skills__list">
+                    <li>Linux System Programming & Architecture</li>
+                    <li>Distributed Systems Design</li>
+                    <li>Monolithic and Microservices Architecture</li>
+                    <li>Database Optimization & Concurrency</li>
+                    <li>Backend Web Development</li>
+                  </ul>
+                </div>
+              </section>
+
+              <!--tools-->
+              <section class="tools section">
+                <div class="tools_container container">
+                  <h2 class="section__title">Tools and Technologies</h2>
+
+                  <ul class="tools__list">
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/C.svg"
+                        alt="C logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">C</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/C++ (CPlusPlus).svg"
+                        alt="C++ logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">C++</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Python.svg"
+                        alt="Python logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Python</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Go.svg"
+                        alt="Go logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Go</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/FastAPI.svg"
+                        alt="FastAPI logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">FastAPI</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Django.svg"
+                        alt="Django logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Django</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Git.svg"
+                        alt="Git logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Git</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/GitHub.svg"
+                        alt="GitHub logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">GitHub</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Redis.svg"
+                        alt="Redis logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Redis</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/PostgresSQL.svg"
+                        alt="PostgresSQL logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Postgres</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/MongoDB.svg"
+                        alt="MongoDB logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">MongoDB</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Apache Kafka.svg"
+                        alt="Apache Kafka logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Apache Kafka</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Docker.svg"
+                        alt="Docker logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Docker</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/cursor-dark.svg"
+                        alt="Cusor logo (Dark)"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Cursor</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/Cloudflare.svg"
+                        alt="Cloudflare logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Cloudflare</span>
+                    </li>
+                    <li class="tools__item">
+                      <img
+                        src="assets/img/claude-ai.svg"
+                        alt="Claude logo"
+                        class="tools__img"
+                      />
+                      <span class="tools_name">Claude Code</span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <div class="main__right">
+              <!--experience-->
+              <section class="experience section">
+                <div class="experience__container container">
+                  <h2 class="section__title">Experience</h2>
+
+                  <div class="experience__content">
+                    <article class="experience__data">
+                      <div class="experience__title">
+                        <p>
+                          On-Site / <br />
+                          Feb, 2026 - Present
+                        </p>
+                        <h3>Chair - IIITU ACM Student Chapter</h3>
+                      </div>
+
+                      <ul class="experience__list">
+                        <li>
+                          Established and chartered the university&apos;s ACM
+                          student chapter, building organizational structure,
+                          bylaws, and governance from the ground up.
+                        </li>
+                        <li>
+                          Spearheaded technical programming across AI/ML
+                          research, cybersecurity, software engineering, systems
+                          design, and competitive programming.
+                        </li>
+                      </ul>
+                    </article>
+
+                    <article class="experience__data">
+                      <div class="experience__title">
+                        <p>
+                          On-Site / <br />
+                          May, 2025 - July, 2025
+                        </p>
+                        <h3>
+                          Developer Intern, Security Operations Center -
+                          TrustLab, CSE, IIT Bombay
+                        </h3>
+                      </div>
+
+                      <ul class="experience__list">
+                        <li>
+                          Architected and containerized production SOC pipeline
+                          with Docker, implementing orchestration and end-to-end
+                          TLS/SSL security.
+                        </li>
+                        <li>
+                          Engineered a full-stack cybersecurity visualization
+                          platform using React (TypeScript) and Node.js
+                          (Express) with Neo4j and ELK Stack integration
+                        </li>
+                      </ul>
+                    </article>
+
+                    <article class="experience__data">
+                      <div class="experience__title">
+                        <p>
+                          On-Site / <br />
+                          May, 2026 - Present
+                        </p>
+                        <h3>Fullstack Lead - IIIT Una</h3>
+                      </div>
+
+                      <ul class="experience__list">
+                        Co-built the in-house hostel allocation portal for the
+                        university, which was used for all hostel room bookings
+                        for the 2026-27 academic year and for BTech, MTech, and
+                        MSc admissions in 2026
+                      </ul>
+                    </article>
+
+                    <article class="experience__data">
+                      <div class="experience__title">
+                        <p>
+                          On-Site / <br />
+                          Mar, 2025 - April, 2026
+                        </p>
+                        <h3>Backend Web Developer - IIIT Una</h3>
+                      </div>
+
+                      <ul class="experience__list">
+                        <li>
+                          Part of the code refactoring effort post government
+                          mandated security audit to harden the codebase against
+                          cyber threats.
+                        </li>
+                        <li>
+                          Developed admin dashboard pages for storing and
+                          managing data representing the university’s
+                          institutional structure. These pages provide the
+                          foundation for modernizing static data and enabling a
+                          more interconnected website experience across
+                          different tabs and sections.
+                        </li>
+                        <li>
+                          Led a dynamic, backend-driven refactor eliminating
+                          hardcoded school routes and static data for
+                          scalability.
+                        </li>
+                        <li>
+                          Standardized static file handling and access control
+                          for key modules, improving permission hygiene.
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+              <!--education-->
+              <section class="education section">
+                <div class="education__container container">
+                  <h2 class="section__title">Education</h2>
+
+                  <ul class="education__list">
+                    <li class="education__item">
+                      <p>BTech - CSE</p>
+                      <h3>Indian Institute of Information Technology Una</h3>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!--projects-->
+          <section
+            class="projects section"
+            data-content
+            id="projects"
+          ></section>
+        </div>
+
+        <!--footer-->
+        <footer class="footer"></footer>
+      </div>
+    </main>
     <!--scrollreveal-->
     <script src=""></script>
     <!--main js-->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
