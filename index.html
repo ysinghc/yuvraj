@@ -46,8 +46,12 @@
               <h1 class="profile__name">Yuvraj Chauhan</h1>
 
               <div class="profile__buttons">
-                <button class="profile__button">Information</button>
-                <button class="profile__button">Projects</button>
+                <button class="profile__button main-active" data-target="#info">
+                  Information
+                </button>
+                <button class="profile__button" data-target="#projects">
+                  Projects
+                </button>
               </div>
 
               <h2 class="section__title">Profile</h2>
@@ -257,8 +261,7 @@
                           May, 2025 - July, 2025
                         </p>
                         <h3>
-                          Developer Intern, Security Operations Center -
-                          TrustLab, CSE, IIT Bombay
+                          Developer Intern, CSE, IIT Bombay
                         </h3>
                       </div>
 
@@ -286,10 +289,12 @@
                       </div>
 
                       <ul class="experience__list">
-                        Co-built the in-house hostel allocation portal for the
-                        university, which was used for all hostel room bookings
-                        for the 2026-27 academic year and for BTech, MTech, and
-                        MSc admissions in 2026
+                        <li>
+                          Co-built the in-house hostel allocation portal for the
+                          university, which was used for all hostel room
+                          bookings for the 2026-27 academic year and for BTech,
+                          MTech, and MSc admissions in 2026
+                        </li>
                       </ul>
                     </article>
 
@@ -348,19 +353,171 @@
           </div>
 
           <!--projects-->
-          <section
-            class="projects section"
-            data-content
-            id="projects"
-          ></section>
+          <section class="projects section" data-content id="projects">
+            <div class="projects__container container">
+              <!-- Open Source Section -->
+              <h2 class="section__title">Open Source</h2>
+              <div class="foss__content grid">
+                <article class="foss__card">
+                  <div class="foss__head">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                      alt="Linux Kernel Logo"
+                      class="foss__img"
+                    />
+                    <h3 class="foss__name">Linux Kernel</h3>
+                  </div>
+                  <ul class="foss_description">
+                    <li>
+                      Diagnosed and resolved a kernel memory leak where
+                      mismatched dev_id cookies prevented interrupt handler
+                      cleanup (cvm_oct_rx_shutdown); patch was merged into Linux
+                      mainline, backported to v4.9, and queued across stable
+                      releases (v5.10-v7.0).
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="foss__card">
+                  <div class="foss__head">
+                    <img
+                      src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg"
+                      alt="Git Logo"
+                      class="foss__img"
+                    />
+                    <h3 class="foss__name">Git Core Tooling</h3>
+                  </div>
+                  <ul class="foss__description">
+                    <li>
+                      Eliminated runtime segfault risk in add_tree_entries() by
+                      fixing a NULL-pointer dereference bug in error diagnostic
+                      paths; merged into master branch.
+                    </li>
+                    <li>
+                      Enhanced test coverage reliability across 11 submodule
+                      tests (t7412) by replacing raw shell predicates with
+                      structured diagnostic libraries.
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="foss__card">
+                  <div class="foss__head">
+                    <img
+                      src="https://www.openhands.dev/assets/webflow/brand/logo.svg"
+                      alt="OpenHands Logo"
+                      class="foss__img"
+                    />
+                    <h3 class="foss__name">(All-Hands-AI)</h3>
+                  </div>
+                  <ul class="foss__description">
+                    <li>
+                      Improved codebase context indexing efficiency for an Al
+                      agent framework by implementing semantic file chunking
+                      powered by Tree-sitter AST parsing; recognized in
+                      OpenHands Champions directory.
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="foss__card">
+                  <div class="foss__head">
+                    <img
+                      src="https://www.apache.org/images/asflogo_horizontal_color.svg"
+                      alt="Apache Software Foundation Logo"
+                      class="foss__img"
+                    />
+                    <h3 class="foss__name">Apache Software Foundation</h3>
+                  </div>
+                  <ul class="foss__description">
+                    Enhanced ecosystem security and session handling across 3
+                    ASF repositories:
+                    <li>
+                      resolved frontend data validation bugs in Superset
+                      (#36075, #35848)
+                    </li>
+                    <li>
+                      implemented field-level password masking in
+                      APISIX-Dashboard (#3251)
+                    </li>
+                    <li>extended OAuth session security in DevLake (#8667)</li>
+                  </ul>
+                </article>
+              </div>
+
+              <!-- Projects Section -->
+              <h2 class="section__title" style="margin-top: 3rem">Projects</h2>
+              <div class="projects__content grid">
+                <article class="projects__card">
+                  <a
+                    href="https://pastebin.ysinghc.in"
+                    target="_blank"
+                    class="projects__link"
+                  >
+                    <img
+                      src="assets/img/pastebin.png"
+                      alt="Pastebin Project Image"
+                      class="projects__img"
+                    />
+                  </a>
+                  <h3 class="projects__name">
+                    Pastebin - Online Clipboard Platform
+                  </h3>
+                  <p>
+                    Engineered a high-concurrency clipboard API processing
+                    rate-limited dynamic pastes under a tight 30-connection
+                    database constraint using atomic Redis pipelines and
+                    TOCTOU-safe sliding-window algorithms. Deployed a decoupled,
+                    multi-cloud production architecture utilizing Hugging Face
+                    Containers for backend processing and Cloudflare Pages for
+                    edge-cached frontend delivery.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
         </div>
 
         <!--footer-->
-        <footer class="footer"></footer>
+        <footer class="footer">
+          <div class="footer__container container">
+            <a
+              href="mailto:self@ysinghc.in"
+              target="_blank"
+              class="footer__link"
+            >
+              <i class="ri-mail-line"></i>
+              <span>self@ysinghc.in</span>
+            </a>
+
+            <a href="tel:+91 9724254549" target="_blank" class="footer__link">
+              <i class="ri-phone-line"></i>
+              <span>+91 9724254549</span>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/ysinghch"
+              target="_blank"
+              class="footer__link"
+            >
+              <i class="ri-linkedin-box-fill"></i>
+              <span>linkedin.com/in/ysinghch</span>
+            </a>
+
+            <a
+              href="https://github.com/ysinghc"
+              target="_blank"
+              class="footer__link"
+            >
+              <i class="ri-github-fill"></i>
+              <span>github.com/ysinghc</span>
+            </a>
+          </div>
+        </footer>
       </div>
     </main>
     <!--scrollreveal-->
-    <script src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
     <!--main js-->
     <script src="assets/js/main.js"></script>
   </body>
