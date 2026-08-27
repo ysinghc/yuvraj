@@ -358,7 +358,14 @@ img {
 /*for large devices*/
 @media (width >= 1150px) {
   .profile__buttons {
+    display: flex;
+    column-gap: 0.5rem;
     justify-self: left;
+    margin-block: 1rem 3rem;
+    border: 1px solid var(--black-color);
+    box-shadow: 0 4px 0 var(--black-color);
+    border-radius: 4rem;
+    padding: 0.25rem;
   }
   .main__content {
     max-width: 1120px;
