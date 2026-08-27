@@ -48,7 +48,6 @@ const sr = ScrollReveal({
     duration: 1500,
     delay: 300,
     easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-    reset: true,
 })
 
 sr.reveal(`.main__content`, {origin: 'top'})
