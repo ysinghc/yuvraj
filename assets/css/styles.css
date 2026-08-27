@@ -197,6 +197,16 @@ img {
   transition: background-color 0.4s;
 }
 
+.redirect__button {
+  background-color: var(--body-color);
+  color: var(--title-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
 .profile__button:hover {
   background-color: var(--first-color-alt);
 }
@@ -339,14 +349,17 @@ img {
 
 /*breakpoint*/
 /*for medium devices*/
-@media (width >= 768px){
-  .projects__content{
+@media (width >= 768px) {
+  .projects__content {
     grid-template-columns: repeat(2, 350px);
   }
 }
 
 /*for large devices*/
 @media (width >= 1150px) {
+  .profile__buttons {
+    justify-self: left;
+  }
   .main__content {
     max-width: 1120px;
     margin: 4rem auto;
@@ -385,11 +398,11 @@ img {
     justify-self: flex-start;
   }
 
-  .profile__image{
+  .profile__image {
     margin: 0;
   }
 
-  .tools__list{
+  .tools__list {
     flex-direction: column;
     align-items: initial;
   }
@@ -402,11 +415,11 @@ img {
     width: 1.5rem;
   }
 
-  .tools__name{
+  .tools__name {
     font-size: var(--normal-font-size);
   }
 
-  .experience__title{
+  .experience__title {
     display: grid;
     grid-template-columns: 120px max-content;
     column-gap: 2rem;
@@ -421,7 +434,7 @@ img {
     column-gap: 2.5rem;
   }
 
-  .footer__container{
+  .footer__container {
     justify-content: space-between;
     padding-block: 3rem;
   }
